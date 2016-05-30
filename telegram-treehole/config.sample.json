@@ -1,6 +1,7 @@
 {
     "bot": {
-        "token": "Your telegram bot token"
+        "token": "Your telegram bot token",
+        "channel_id":"The chat id of broadcast channel of treehole"
     },
 
     "comment":{
