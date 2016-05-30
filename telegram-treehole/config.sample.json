@@ -1,0 +1,17 @@
+{
+    "bot": {
+        "token": "Your telegram bot token"
+    },
+
+    "comment":{
+        "time_limit":"3600000"
+    },
+
+    "database": {
+        "url": "mongodb://localhost/treehole"
+    },
+
+    "log": {
+        "app_log_path": "/var/log/treehole/app.log"
+    }
+}

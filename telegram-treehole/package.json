@@ -1,0 +1,23 @@
+{
+    "name": "telegram-treehole",
+    "description": "Secrets channel on telegram",
+    "version": "0.0.1",
+    "author": "Sardo Ip<sardo.ip@sardo.work>",
+    "dependencies": {
+        "log4js":"0.6.27",
+        "express":"4.12.2",
+        "express-promise":"0.4.0",
+        "mongoose": "4.0.1",
+        "moment": "2.10.3",
+        "nconf":"0.8.2",
+        "node-telegram-bot-api":"0.21.1"
+    },
+    "license": "Apache-2.0",
+    "engines": {
+        "node": ">=0.10"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
