@@ -14,14 +14,21 @@ log4js.addAppender(log4js.appenders.file(appLogPath), 'APP_LOG');
 var token = nconf.get('bot').token;
 var bot = new telegramBot(token, {polling: true});
 
+//Setting response of the telegram bot when detected keyword
 bot.onText(/\/start/, function (msg) {
     var fromId = msg.from.id;
     var resp = nconf.get('response').start;
     bot.sendMessage(fromId, resp);
 });
 
-bot.on('/\/rule/', function (msg) {    
+bot.onText(/\/rule/, function (msg) {
     var fromId = msg.from.id;
     var resp = nconf.get('response').rule;
+    bot.sendMessage(fromId, resp);
+});
+
+bot.onText(/\/new/, function (msg) {
+    var fromId = msg.from.id;
+    var resp = nconf.get('response').new_content;
     bot.sendMessage(fromId, resp);
 });
